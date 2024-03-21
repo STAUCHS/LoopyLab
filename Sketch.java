@@ -7,7 +7,7 @@ public class Sketch extends PApplet {
    * Called once at the beginning of execution, put your size all in this method
    */
   public void settings() {
-	// put your size call here
+	  // put your size call here
     size(1200, 600);
   }
 
@@ -23,15 +23,6 @@ public class Sketch extends PApplet {
    * Called repeatedly, anything drawn to the screen goes here
    */
   public void draw() {
-	  
-	// sample code, delete this stuff
-    /*
-    stroke(128);
-    line(150, 25, 270, 350);  
-
-    stroke(255);
-    line(50, 125, 70, 50);  
-*/
     draw_section_outlines();
     draw_section1();
     draw_section2();
@@ -42,8 +33,6 @@ public class Sketch extends PApplet {
     draw_section6();
     draw_section7();
     draw_section8();
-
-    
   }
 
 
@@ -70,12 +59,12 @@ public class Sketch extends PApplet {
   /**
    * draws the bottom left section
    */
-  public void draw_section1(){
+  public void draw_section1() {
     int intX = 0;
     int intY = 0;
 
-    for(int intRow = 0; intRow < 30; intRow++){
-      for(int intColumn = 0; intColumn < 30; intColumn++){
+    for (int intRow = 0; intRow < 30; intRow++) {
+      for (int intColumn = 0; intColumn < 30; intColumn++) {
         intX = 3 + 0;  //Instead of zero, calculate the proper intX location using 'intRow'
         intY = 300 + 3 + 0; //Instead of zero, calculate the proper intY location using 'intColumn'
 
@@ -91,7 +80,7 @@ public class Sketch extends PApplet {
    * Use the modulus operator and an if statement to select the color
    * Don't loop from 30 to 60 to shift everything over, just add 300 to x.
    */
-  public void draw_section2(){
+  public void draw_section2() {
 
   }
 
@@ -99,39 +88,34 @@ public class Sketch extends PApplet {
    * Use the modulus operator and an if/else statement to select the color.
    * Don't use multiple 'if' statements.
    */
-  public void draw_section3(){
+  public void draw_section3() {
 
   }
 
   /**
    * Use the modulus operator and just one 'if' statement to select the color.
    */
-  public void draw_section4(){
+  public void draw_section4() {
 
   }
 
   /**
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
    */
-  public void draw_section5(){
+  public void draw_section5() {
 
   }
 
-  public void draw_section6(){
+  public void draw_section6() {
 
   }
 
-  public void draw_section7(){
+  public void draw_section7() {
 
   }
   
-  public void draw_section8(){
+  public void draw_section8() {
 
   }
-
-
-
-
-
 
 }
