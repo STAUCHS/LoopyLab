@@ -35,21 +35,20 @@ public class Sketch extends PApplet {
     draw_section8();
   }
 
-
   /**
    * Draw the outlines for all sections
    */
-  public void draw_section_outlines(){
+  public void draw_section_outlines() {
     stroke(0);
     noFill();
 
-    // draw bottom row boxes
+    // Draw bottom row boxes
     rect(0,300, 300, 300);
     rect(300, 300, 300, 300);
     rect(600, 300, 300, 300);
     rect(900, 300, 300, 300);
 
-    // draw top row boxes
+    // Draw top row boxes
     rect(0,0, 300, 300);
     rect(300, 0, 300, 300);
     rect(600, 0, 300, 300);
@@ -57,7 +56,7 @@ public class Sketch extends PApplet {
   }
   
   /**
-   * draws the bottom left section
+   * Draws the bottom left section
    */
   public void draw_section1() {
     int intX = 0;
@@ -65,13 +64,12 @@ public class Sketch extends PApplet {
 
     for (int intRow = 0; intRow < 30; intRow++) {
       for (int intColumn = 0; intColumn < 30; intColumn++) {
-        intX = 3 + 0;  //Instead of zero, calculate the proper intX location using 'intRow'
-        intY = 300 + 3 + 0; //Instead of zero, calculate the proper intY location using 'intColumn'
+        intX = 3 + 0;  // Instead of zero, calculate the proper intX location using 'intRow'
+        intY = 300 + 3 + 0; // Instead of zero, calculate the proper intY location using 'intColumn'
 
         fill(255);
         noStroke();
         rect(intX, intY, 5, 5);
-
       }
     }
   }
